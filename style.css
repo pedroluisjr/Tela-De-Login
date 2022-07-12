@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.login-principal {
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-esquerda {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-esquerda>h1 {
+    font-size: 3vw;
+    color: #77ffc0;
+}
+
+.login-direita {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-imagem {
+    width: 35vw;
+}
+
+.login-painel {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.login-painel>h1 {
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+
+.texto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.texto>input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.texto>label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.texto>input::placeholder {
+    color: #f0ffff94;
+}
+
+.login-botao {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b132b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+.github {
+    width: 3vw;
+}
+
+a {
+    text-decoration: none;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    padding: 4px 8px;
+    color: #514869;
+    background: #201b2c;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00000056;
+}
+
+@media only screen and (max-width: 950px) {
+    .login-painel {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .login-principal {
+        flex-direction: column;
+    }
+
+    .login-esquerda>h1 {
+        display: none;
+    }
+
+    .login-esquerda {
+        width: 100%;
+        height: auto;
+    }
+
+    .login-direita {
+        width: 100%;
+        height: auto;
+    }
+
+    .login-imagem {
+        width: 50vw;
+    }
+
+    .login-painel {
+        width: 90%;
+    }
+}
